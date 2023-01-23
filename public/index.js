@@ -10,6 +10,8 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
+window.onload(alert('zoom out to explore more and click on the area of where you want the weather'))
+
 // Click function for the pop up and displaying data
 map.on('click', function (e) {
     counter = counter + 1;
