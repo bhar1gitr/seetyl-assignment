@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map</title>
+    <!-- Linking leaflet js for map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+    crossorigin=""/>
+    <!-- Linking css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Importing bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+<body>
+    <!-- Top navigation bar -->
+    <div class="counts">Number of cities visited : <span id="tracker">0</span>
+    <form action="/" method="post">
+        <input type="search" name="city" id="city">
+        <button type="submit" onsubmit="getCity()"><i class="bi bi-search"></i></button>
+    </form>
+    </div>
+    <!-- Main map -->
+    <div id="map"></div>
+        <!-- Linking leaflet js for map -->
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+     crossorigin=""></script>
+        <!-- Linking js --> -->
+    <script src="index.js"></script>
+</body>
+</html>
